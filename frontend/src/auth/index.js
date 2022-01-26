@@ -11,7 +11,8 @@ export const isAuthenticated = () => {
   }
 
   if (localStorage.getItem("suprime-jwt")) {
-    return JSON.parse(localStorage.getItem("suprime-jwt"));
+    // return JSON.parse(localStorage.getItem("suprime-jwt"));
+    return localStorage.getItem("suprime-jwt");
   } else {
     return false;
   }

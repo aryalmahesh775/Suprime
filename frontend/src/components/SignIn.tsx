@@ -33,7 +33,8 @@ const Signin = () => {
           setLoading(false);
           //   authenticate && redirect
           if (typeof window !== "undefined") {
-            localStorage.setItem("suprime-jwt", JSON.stringify(data));
+            // localStorage.setItem("suprime-jwt", JSON.stringify(data.token));
+            localStorage.setItem("suprime-jwt", data.token);
           }
           setRedirect(true);
         }
